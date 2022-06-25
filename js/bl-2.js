@@ -57,11 +57,27 @@
 // menu.unshift('Вассабі', 'Угорь');
 // console.log(menu);
 
-// ========= task 1 =============
 // Записать массив, const arr = [“BEST”, “the”, “foo”, “is”,  “JS” ]
 // развернуть массив,
 // вырезать foo,
 // перевести его в строку разделенную пробелами
+
+// const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
+// const arrReverse = arr.reverse();
+// console.log(arrReverse);
+// const arrClean = arrReverse.splice(2, 1);
+// console.log(arrReverse);
+// console.log(arrClean);
+// console.log(arrReverse.join(' '));
+// ======================
+
+ const arrTwo = ['BEST', 'the', 'foo', 'is', 'JS'];
+
+function arrToString(arr, idx) {
+    return arr.slice(0, idx).concat(arr.slice(idx + 1)).reverse().join(' ');
+}
+console.log(arrToString(arrTwo, 2));
+
 
 // const arr = ["BEST", "the", "foo", "is", "JS"];
 // const arrRevers = arr.reverse();

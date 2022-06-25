@@ -56,11 +56,12 @@
 
 // menu.unshift('Вассабі', 'Угорь');
 // console.log(menu);
-// ======================
+
 // Записать массив, const arr = [“BEST”, “the”, “foo”, “is”,  “JS” ]
 // развернуть массив,
 // вырезать foo,
 // перевести его в строку разделенную пробелами
+
 // const arr = ['BEST', 'the', 'foo', 'is', 'JS'];
 // const arrReverse = arr.reverse();
 // console.log(arrReverse);
@@ -76,3 +77,33 @@ function arrToString(arr, idx) {
     return arr.slice(0, idx).concat(arr.slice(idx + 1)).reverse().join(' ');
 }
 console.log(arrToString(arrTwo, 2));
+
+
+// const arr = ["BEST", "the", "foo", "is", "JS"];
+// const arrRevers = arr.reverse();
+// console.log(arrRevers);
+// ======= task 2 ================
+//const inputData = [
+//     { id: 1, name: "Item 1" },
+//     { id: 2, name: "Item 2" },
+//     { id: 4, name: "Item 4" },
+//     { id: 7, name: "Item 7" },
+//   ];
+
+//   it('should return normalized data', () => {
+//     expect(normalize(inputData)).toEqual({
+//       entities: {
+//         1: { id: 1, name: "Item 1" },
+//         2: { id: 2, name: "Item 2" },
+//         4: { id: 4, name: "Item 4" },
+//         7: { id: 7, name: "Item 7" },
+//       },
+//       byId: [1, 2, 4, 7],
+//     });
+//   });
+// ====== task 3=============
+//cars: [
+// 		{ brand: 'Mazda', mileage: 17 },
+// 		{ brand: 'Honda', mileage: 80 },
+// 		{ brand: 'Nissan', mileage: 50 },
+// 	],

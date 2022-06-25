@@ -4,7 +4,7 @@
 //   d: 1,
 //   e: 4,
 // };
-
+// ============================
 // c[a] = 3;
 // c[b] = 4;
 // console.log(c);
@@ -33,3 +33,9 @@
 // console.log(result7);
 // const result6 = null ?? NaN;
 // console.log(result6);
+
+//=======================
+
+// const nums = [1, 3, 8, 15, 9, 13];
+// const [n] = nums;
+// console.log(n);

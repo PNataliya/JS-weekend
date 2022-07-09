@@ -71,24 +71,44 @@
 // console.log(arrReverse.join(' '));
 // ======================
 
- const arrTwo = ['BEST', 'the', 'foo', 'is', 'JS'];
+//  const arrTwo = ['BEST', 'the', 'foo', 'is', 'JS'];
 
-function arrToString(arr, idx) {
-    return arr.slice(0, idx).concat(arr.slice(idx + 1)).reverse().join(' ');
-}
-console.log(arrToString(arrTwo, 2));
+// function arrToString(arr, idx) {
+//     return arr.slice(0, idx).concat(arr.slice(idx + 1)).reverse().join(' ');
+// }
+// console.log(arrToString(arrTwo, 2));
 
 
 // const arr = ["BEST", "the", "foo", "is", "JS"];
 // const arrRevers = arr.reverse();
 // console.log(arrRevers);
 // ======= task 2 ================
-//const inputData = [
-//     { id: 1, name: "Item 1" },
-//     { id: 2, name: "Item 2" },
-//     { id: 4, name: "Item 4" },
-//     { id: 7, name: "Item 7" },
-//   ];
+// Создать функцию которая принимает массив обектов
+// создает пустой обектб состоящий из 2-х ключей entities byId
+const inputData = [
+    { id: 1, name: "Item 1" },
+    { id: 2, name: "Item 2" },
+    { id: 4, name: "Item 4" },
+    { id: 7, name: "Item 7" },
+  ];
+  
+  function dataNormalize (datas){
+    const objectData = {};
+    const arrayId = [];
+    const resultData = {};
+    datas.forEach(data => {
+        let elementId = data.id; 
+        objectData[elementId] = data;
+        arrayId.push(elementId);
+    });
+   resultData.entities = objectData;
+   resultData.byId =  arrayId;
+   console.log(resultData);
+   return resultData;
+  }
+  dataNormalize(inputData);
+
+  
 
 //   it('should return normalized data', () => {
 //     expect(normalize(inputData)).toEqual({
